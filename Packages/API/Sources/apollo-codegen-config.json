@@ -1,0 +1,40 @@
+{
+  "schemaNamespace" : "API",
+  "input" : {
+    "operationSearchPaths" : [
+      "**/*.graphql"
+    ],
+    "schemaSearchPaths" : [
+      "**/*.graphqls"
+    ]
+  },
+  "output" : {
+    "testMocks" : {
+      "none" : {
+      }
+    },
+    "schemaTypes" : {
+      "path" : "./API",
+      "moduleType" : {
+        "swiftPackageManager": {}
+      }
+    },
+    "operations" : {
+      "inSchemaModule" : {
+      }
+    }
+  },
+  "schemaDownloadConfiguration": {
+    "downloadMethod": {
+      "introspection": {
+        "endpointURL": "https://swapi-graphql.netlify.app/.netlify/functions/index",
+        "includeDeprecatedInputValues": false,
+        "httpMethod": {
+          "POST": {}
+        },
+        "outputFormat": "JSON"
+      }
+    },
+    "outputPath": "./"
+  }
+}
