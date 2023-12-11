@@ -14,6 +14,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F2B83AA2B26D7F500E2BFAD /* Packages */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Packages; sourceTree = "<group>"; };
 		4F46F98D2B26D376004BD8FE /* GraphQLSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraphQLSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F46F9902B26D376004BD8FE /* GraphQLSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLSampleApp.swift; sourceTree = "<group>"; };
 		4F46F9922B26D376004BD8FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +52,7 @@
 		4F46F98F2B26D376004BD8FE /* GraphQLSample */ = {
 			isa = PBXGroup;
 			children = (
+				4F2B83AA2B26D7F500E2BFAD /* Packages */,
 				4F46F9902B26D376004BD8FE /* GraphQLSampleApp.swift */,
 				4F46F9922B26D376004BD8FE /* ContentView.swift */,
 				4F46F9942B26D378004BD8FE /* Assets.xcassets */,
