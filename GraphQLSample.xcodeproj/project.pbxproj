@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F2B83AD2B26D8ED00E2BFAD /* Packages in Frameworks */ = {isa = PBXBuildFile; productRef = 4F2B83AC2B26D8ED00E2BFAD /* Packages */; };
 		4F46F9912B26D376004BD8FE /* GraphQLSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F46F9902B26D376004BD8FE /* GraphQLSampleApp.swift */; };
 		4F46F9932B26D376004BD8FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F46F9922B26D376004BD8FE /* ContentView.swift */; };
 		4F46F9952B26D378004BD8FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F46F9942B26D378004BD8FE /* Assets.xcassets */; };
@@ -27,17 +28,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F2B83AD2B26D8ED00E2BFAD /* Packages in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F2B83AB2B26D8ED00E2BFAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4F46F9842B26D376004BD8FE = {
 			isa = PBXGroup;
 			children = (
 				4F46F98F2B26D376004BD8FE /* GraphQLSample */,
 				4F46F98E2B26D376004BD8FE /* Products */,
+				4F2B83AB2B26D8ED00E2BFAD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +95,9 @@
 			dependencies = (
 			);
 			name = GraphQLSample;
+			packageProductDependencies = (
+				4F2B83AC2B26D8ED00E2BFAD /* Packages */,
+			);
 			productName = GraphQLSample;
 			productReference = 4F46F98D2B26D376004BD8FE /* GraphQLSample.app */;
 			productType = "com.apple.product-type.application";
@@ -346,6 +359,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4F2B83AC2B26D8ED00E2BFAD /* Packages */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Packages;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4F46F9852B26D376004BD8FE /* Project object */;
 }

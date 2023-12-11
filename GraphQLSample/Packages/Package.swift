@@ -22,6 +22,7 @@ let package = Package(
             dependencies: [
                 // Apollo
                 .product(name: "Apollo", package: "apollo-ios"),
+                .product(name: "ApolloAPI", package: "apollo-ios"),
             ]
         ),
     ]
