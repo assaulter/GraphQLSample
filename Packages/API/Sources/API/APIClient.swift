@@ -27,7 +27,7 @@ public final class APIClient {
     
     public func allTitles() async throws -> [String] {
         try await withCheckedThrowingContinuation({ continution in
-            apollo.fetch(query: SW.AllFilmTitlesQuery()) { result in
+            apollo.fetch(query: SW.AllTitlesQuery()) { result in
                 switch result {
                 case .success(let val):
                     let titles = val.data?.allFilms?.films?.compactMap({ film in

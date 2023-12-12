@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-public extension SW.Objects {
+extension SW.Objects {
   static let Root = ApolloAPI.Object(
     typename: "Root",
     implementedInterfaces: []

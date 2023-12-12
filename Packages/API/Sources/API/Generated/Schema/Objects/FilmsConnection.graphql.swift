@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-public extension SW.Objects {
+extension SW.Objects {
   /// A connection to a list of items.
   static let FilmsConnection = ApolloAPI.Object(
     typename: "FilmsConnection",

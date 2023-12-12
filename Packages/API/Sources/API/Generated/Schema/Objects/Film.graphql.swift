@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-public extension SW.Objects {
+extension SW.Objects {
   /// A single film.
   static let Film = ApolloAPI.Object(
     typename: "Film",

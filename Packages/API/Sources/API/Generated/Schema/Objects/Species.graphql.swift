@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-public extension SW.Objects {
+extension SW.Objects {
   /// A type of person or character within the Star Wars Universe.
   static let Species = ApolloAPI.Object(
     typename: "Species",

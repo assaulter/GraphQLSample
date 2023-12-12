@@ -17,8 +17,7 @@
       "path" : "./API/Generated",
       "moduleType" : {
         "embeddedInTarget" : {
-          "name" : "API",
-          "accessModifier" : "public"
+          "name" : "API"
         }
       }
     },

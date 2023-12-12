@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-public extension SW.Objects {
+extension SW.Objects {
   /// A single transport craft that does not have hyperdrive capability
   static let Vehicle = ApolloAPI.Object(
     typename: "Vehicle",

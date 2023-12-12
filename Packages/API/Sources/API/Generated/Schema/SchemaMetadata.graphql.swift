@@ -3,19 +3,19 @@
 
 import ApolloAPI
 
-public protocol SW_SelectionSet: ApolloAPI.SelectionSet & ApolloAPI.RootSelectionSet
+protocol SW_SelectionSet: ApolloAPI.SelectionSet & ApolloAPI.RootSelectionSet
 where Schema == SW.SchemaMetadata {}
 
-public protocol SW_InlineFragment: ApolloAPI.SelectionSet & ApolloAPI.InlineFragment
+protocol SW_InlineFragment: ApolloAPI.SelectionSet & ApolloAPI.InlineFragment
 where Schema == SW.SchemaMetadata {}
 
-public protocol SW_MutableSelectionSet: ApolloAPI.MutableRootSelectionSet
+protocol SW_MutableSelectionSet: ApolloAPI.MutableRootSelectionSet
 where Schema == SW.SchemaMetadata {}
 
-public protocol SW_MutableInlineFragment: ApolloAPI.MutableSelectionSet & ApolloAPI.InlineFragment
+protocol SW_MutableInlineFragment: ApolloAPI.MutableSelectionSet & ApolloAPI.InlineFragment
 where Schema == SW.SchemaMetadata {}
 
-public extension SW {
+extension SW {
   typealias ID = String
 
   typealias SelectionSet = SW_SelectionSet
@@ -27,9 +27,9 @@ public extension SW {
   typealias MutableInlineFragment = SW_MutableInlineFragment
 
   enum SchemaMetadata: ApolloAPI.SchemaMetadata {
-    public static let configuration: ApolloAPI.SchemaConfiguration.Type = SchemaConfiguration.self
+    static let configuration: ApolloAPI.SchemaConfiguration.Type = SchemaConfiguration.self
 
-    public static func objectType(forTypename typename: String) -> ApolloAPI.Object? {
+    static func objectType(forTypename typename: String) -> ApolloAPI.Object? {
       switch typename {
       case "Root": return SW.Objects.Root
       case "FilmsConnection": return SW.Objects.FilmsConnection
