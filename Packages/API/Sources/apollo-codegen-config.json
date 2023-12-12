@@ -14,7 +14,7 @@
       }
     },
     "schemaTypes" : {
-      "path" : "./API",
+      "path" : "./API/Generated",
       "moduleType" : {
         "swiftPackageManager": {}
       }
@@ -35,6 +35,6 @@
         "outputFormat": "JSON"
       }
     },
-    "outputPath": "./"
+    "outputPath": "./schema.json"
   }
 }
