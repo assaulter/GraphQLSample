@@ -1,5 +1,5 @@
 {
-  "schemaNamespace" : "API",
+  "schemaNamespace" : "SW",
   "input" : {
     "operationSearchPaths" : [
       "**/*.graphql"
@@ -16,7 +16,10 @@
     "schemaTypes" : {
       "path" : "./API/Generated",
       "moduleType" : {
-        "swiftPackageManager": {}
+        "embeddedInTarget" : {
+          "name" : "API",
+          "accessModifier" : "public"
+        }
       }
     },
     "operations" : {
