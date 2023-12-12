@@ -5,7 +5,7 @@
       "**/*.graphql"
     ],
     "schemaSearchPaths" : [
-      "**/*.graphqls"
+      "./schema.json"
     ]
   },
   "output" : {
