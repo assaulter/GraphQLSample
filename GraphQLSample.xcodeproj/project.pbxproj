@@ -11,9 +11,11 @@
 		4F46F9932B26D376004BD8FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F46F9922B26D376004BD8FE /* ContentView.swift */; };
 		4F46F9952B26D378004BD8FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F46F9942B26D378004BD8FE /* Assets.xcassets */; };
 		4F46F9982B26D378004BD8FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F46F9972B26D378004BD8FE /* Preview Assets.xcassets */; };
+		4FB54D1F2B26E80000863EA8 /* API in Frameworks */ = {isa = PBXBuildFile; productRef = 4FB54D1E2B26E80000863EA8 /* API */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F2B83AE2B26E7CC00E2BFAD /* API */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = API; sourceTree = "<group>"; };
 		4F46F98D2B26D376004BD8FE /* GraphQLSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraphQLSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F46F9902B26D376004BD8FE /* GraphQLSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLSampleApp.swift; sourceTree = "<group>"; };
 		4F46F9922B26D376004BD8FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,17 +28,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FB54D1F2B26E80000863EA8 /* API in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F2B83AB2B26D8ED00E2BFAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4F46F9842B26D376004BD8FE = {
 			isa = PBXGroup;
 			children = (
+				4FB54D202B27047B00863EA8 /* Packages */,
 				4F46F98F2B26D376004BD8FE /* GraphQLSample */,
 				4F46F98E2B26D376004BD8FE /* Products */,
+				4F2B83AB2B26D8ED00E2BFAD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +79,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		4FB54D202B27047B00863EA8 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				4F2B83AE2B26E7CC00E2BFAD /* API */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +103,9 @@
 			dependencies = (
 			);
 			name = GraphQLSample;
+			packageProductDependencies = (
+				4FB54D1E2B26E80000863EA8 /* API */,
+			);
 			productName = GraphQLSample;
 			productReference = 4F46F98D2B26D376004BD8FE /* GraphQLSample.app */;
 			productType = "com.apple.product-type.application";
@@ -344,6 +367,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4FB54D1E2B26E80000863EA8 /* API */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = API;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4F46F9852B26D376004BD8FE /* Project object */;
 }
